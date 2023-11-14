@@ -91,7 +91,7 @@ let data = `[
         "INCIDENT_YEAR" : 2018,
         "time" : "10:21",
         "TiME_OF_DAY" : "Day",
-        "location" : "15 MILES NW KSFF",
+        "location" : "NW KSFF",
         "species" : "American white pelican",
         "NR_FATALITIES" : 3
     },
@@ -131,7 +131,7 @@ let data = `[
         "INCIDENT_YEAR" : 2016,
         "time" : "09:00",
         "TiME_OF_DAY" : "Day",
-        "location" : "2 miles SW Birchwood Airport, Chugiak, AK",
+        "location" : "SW Birchwood Airport, Chugiak, AK",
         "species" : "Bald eagle",
         "NR_FATALITIES" : 4
     },
