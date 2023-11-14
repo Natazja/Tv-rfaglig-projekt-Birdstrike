@@ -1,0 +1,107 @@
+* {
+    background-color:rgb(250, 250, 250);
+    font-family: "Sinhala MN";
+}
+
+.nav_links {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0;
+}
+
+.nav_links li {
+    display: inline-block;
+    color: lightskyblue;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+}
+
+.nav_links li a:hover {
+    color: lightskyblue;
+}
+
+.border1 {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.border2 {
+    border: 2px solid #3399ff;
+    border-radius: 5px;
+}
+
+body {
+    height: 100%;
+    margin: 5px;
+}
+.leaflet-container {
+    height: 400px;
+    width: 600px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.map {
+    width: 800px;
+    height: 500px;
+}
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+.legend {
+    text-align: left;
+    line-height: 18px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+#incidentList li {
+    margin-bottom: 15px;
+}

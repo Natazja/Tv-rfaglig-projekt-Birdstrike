@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tværfaglig Project: Birdstrike</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<header>
+  <a href="../index.html"><img class="logo" src="../logo.png" width="300" height="150" alt="logo"></a>
+  <nav>
+    <ul class="nav_links">
+      <li><a href="../graphs.html">Graphs</a></li>
+      <li><a href="map.html">Map</a></li>
+      <li><a href="../statistics.html">Statistics</a></li>
+      <li><a href="../deaths/deaths.html">Deaths</a></li>
+      <li><a href="../birds.html">Types of Birds</a></li>
+    </ul>
+  </nav>
+</header>
+<hr class="border1">
+<hr class="border2">
+<main>
+  <h3>Bird vs Plane Map</h3>
+  <div class="flex-container">
+    <div>
+      <p>Welcome!</p>
+      <p>
+        On this page you can use the map to see all the different places birds hit planes. You can even sort them after how serious the consequences were!
+      </p>
+      <p>You can also look at the different types of birds 🐦‍⬛</p>
+    </div>
+  </div>
+  <div id="map">
+  <link
+          rel="shortcut icon"
+          type="image/x-icon"
+          href="docs/images/favicon.ico"
+  />
+
+  <link
+          rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+          integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+          crossorigin=""
+  />
+  <script
+          src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+          integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+          crossorigin=""
+  ></script>
+  </div>
+</main>
+<body>
+  <script src="birdstrikes.js"></script>
+  <script src="map.js"></script></body>
+</html>
