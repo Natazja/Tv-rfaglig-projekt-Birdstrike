@@ -114,3 +114,8 @@ body {
 #incidentTable td {
     padding: 15px; /* Adjust the value as needed */
 }
+
+.birds-striksFrom1990To2022 {
+    margin-left: 50px;
+    margin-right: 100px;
+}
