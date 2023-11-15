@@ -144,11 +144,15 @@ const chart = new Chart(ctx, {
     data: {
         labels: years,
         datasets: [{
-            label: 'Incidents of bird strike from 1990 to 2022',
+            label: 'Incidents of bird strike from 1990 to 2022 \ud83d\udc26',
             data: incidentCounts,
             borderColor: 'rgba(75, 192, 192, 1)',
-            borderWidth: 1,
-            fill: false,
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderWidth: 2,
+            pointBackgroundColor: 'rgba(75, 192, 192, 1)',
+            pointBorderColor: 'rgba(75, 192, 192, 1)',
+            pointRadius: 5,
+            fill: true,
         }]
     },
     options: {
@@ -162,13 +166,16 @@ const chart = new Chart(ctx, {
                             return value;
                         }
                     }
+                },
+                grid: {
+                    display: true,
                 }
             },
             y: {
                 beginAtZero: true,
                 title: {
                     display: true,
-                    text: 'Total amount of incidents per year   ', // You can customize the label here
+                    text: 'Total amount of incidents per year',
                 },
                 ticks: {
                     callback: function (value) {
@@ -176,10 +183,17 @@ const chart = new Chart(ctx, {
                             return value;
                         }
                     }
+                },
+                grid: {
+                    display: true,
                 }
             }
         }
     }
-
-
 });
+
+
+
+
+
+
