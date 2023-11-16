@@ -1,6 +1,9 @@
 * {
-    font-family: "Candara", serif;
-    margin: 10px;
+    font-family: Tahoma, serif;
+}
+
+main {
+    margin: 15px;
 }
 
 h3 {
@@ -129,6 +132,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 15px;
 }
 
 .gallery img {
