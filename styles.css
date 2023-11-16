@@ -16,9 +16,8 @@ h3 {
 }
 
 h4 {
-    font-size: 17px;
+    font-size: 20px;
     margin-bottom: 25px;
-    margin-left: 0;
 }
 
 p {
@@ -82,6 +81,13 @@ header ul {
 .border2 {
     border: 2px solid #3399ff;
     border-radius: 5px;
+}
+
+.border3 {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 0;
+    margin-top: 25px;
 }
 
 body {
@@ -152,4 +158,6 @@ body {
     margin-left: 50px;
     margin-right: 100px;
 }
+
+
 
