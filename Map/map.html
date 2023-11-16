@@ -40,8 +40,8 @@
 </html>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-<script id="mapOfUSA">
-  //------- MAP
+<script>
+  //--------------------- MAP
   const map = L.map('map').setView([37.8, -96], 4);
 
   const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -51,7 +51,7 @@
 
   L.geoJson(statesData).addTo(map);
 
-  // ------- COLOR
+  // --------------------- COLOR
   function getColor(c) {
     return c > 15000 ? '#00154B' :
             c > 10000  ? '#002A80' :
@@ -75,15 +75,15 @@
 
   L.geoJson(statesData, {style: style}).addTo(map);
 
-  //------- ICON
+  //--------------------- ICON
   const birdIcon = L.icon({
     iconUrl: 'https://i0.wp.com/soatok.blog/wp-content/uploads/2023/01/Twitter-Dead.png?fit=280%2C248&ssl=1',
-    iconSize:     [28, 24.8], // size of the icon
-    iconAnchor:   [2.2, 9.4], // point of the icon which will correspond to marker's location
-    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+    iconSize:     [28, 24.8], // Size of the icon
+    iconAnchor:   [2.2, 9.4], // Point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -76] // Point from which the popup should open relative to the iconAnchor
   });
 
-  //------- MARKERS
+  //--------------------- ICON MARKERS
   // Texas
   L.marker([31, -100], {icon: birdIcon}).addTo(map);
   L.marker([31, -100], {icon: birdIcon}).addTo(map).bindPopup("The aircraft, assigned to Training Air Wing 2 at Naval Air Station Kingsville in Texas, plummeted to the ground near the runway in August 2022 after the aircraft swallowed a large bird.");
@@ -94,7 +94,7 @@
   L.marker([27.994402, -81.760254], {icon: birdIcon}).addTo(map);
   L.marker([27.994402, -81.760254], {icon: birdIcon}).addTo(map).bindPopup("On Friday the 12th of April, 2019, in Alachua, Florida, a local man was killed by the world's most dangerous bird, the cassowary.");
 
-  //------- INTERACTIVITY
+  //--------------------- MAP INTERACTIVITY
   function highlightFeature(e) {
     let layer = e.target;
 
@@ -130,7 +130,7 @@
     onEachFeature: onEachFeature
   }).addTo(map);
 
-  //------- INFO + CONTROL
+  //--------------------- INFO + CONTROL
   const info = L.control();
 
   info.onAdd = function (map) {
@@ -147,7 +147,7 @@
 
   info.addTo(map);
 
-  //------- LEGEND
+  //--------------------- LEGEND
   const legend = L.control({position: 'bottomright'});
 
   legend.onAdd = function (map) {
