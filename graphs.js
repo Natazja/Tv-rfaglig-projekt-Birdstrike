@@ -137,7 +137,7 @@ let datatoGraf = [
 const years = datatoGraf.map(entry => entry.INCIDENT_YEAR);
 const incidentCounts = datatoGraf.map(entry => entry.IncidentCount);
 
-const ctx = document.querySelector('#chart').getContext('2d');
+const ctx = document.querySelector('.chart').getContext('2d');
 
 const chart = new Chart(ctx, {
     type: 'line',
@@ -191,6 +191,62 @@ const chart = new Chart(ctx, {
         }
     }
 });
+
+
+let dataNoAnimals = [
+    {
+        "Number_species" : 1222,
+        "SPECIES" : "🦌White-tailed deer"
+    },
+    {
+        "Number_species" : 800,
+        "SPECIES" : "🐺Coyote"
+    },
+    {
+        "Number_species" : 1396,
+        "SPECIES" : "🦇MicroBats"
+    },
+    {
+        "Number_species" : 29,
+        "SPECIES" : "🐊 American alligator"
+    },
+    {
+        "Number_species" : 277,
+        "SPECIES" : "🦊Red fox"
+    },
+    {
+        "Number_species" : 177,
+        "SPECIES" : "🦝Raccoon"
+    }
+]
+
+const amountOfNoBirds = dataNoAnimals.map(entry => entry.Number_species);
+const species = dataNoAnimals.map(entry=> entry.SPECIES)
+
+const ctx1 = document.querySelector('.No-birds').getContext('2d');
+
+const BarChart = new Chart(ctx1, {
+    type: 'bar',
+    data: {
+        labels: species, // Use species as labels
+        datasets: [{
+            label: 'Number of Incidents Involving Wildlife Strikes (1990-2022)',
+            data: amountOfNoBirds,
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+
 
 
 
