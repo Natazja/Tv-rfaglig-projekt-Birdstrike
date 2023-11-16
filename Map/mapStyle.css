@@ -1,8 +1,13 @@
 /* MAP */
 #map {
-    height: 75vh;
-    width: 75%;
+    margin: 50px;
+    margin-left: 100px;
+    border-style: solid;
+    height: 85vh;
+    width: 85%;
 }
+
+
 
 /* INFO BOX */
 .info {

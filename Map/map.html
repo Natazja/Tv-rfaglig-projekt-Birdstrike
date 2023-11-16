@@ -88,13 +88,13 @@
   //------- MARKERS
   // Texas
   L.marker([31, -100], {icon: birdIcon}).addTo(map);
-  L.marker([31, -100], {icon: birdIcon}).addTo(map).bindPopup("In Texas, there has been 22823 birdstrike incidents since 1990. ");
+  L.marker([31, -100], {icon: birdIcon}).addTo(map).bindPopup("The aircraft, assigned to Training Air Wing 2 at Naval Air Station Kingsville in Texas, plummeted to the ground near the runway in August 2022 after the aircraft swallowed a large bird.");
   // California
   L.marker([36.778259, -120.417931], {icon: birdIcon}).addTo(map);
-  L.marker([36.778259, -120.417931], {icon: birdIcon}).addTo(map).bindPopup("In California, there has been 19238 birdstrike incidents since 1990. ");
+  L.marker([36.778259, -120.417931], {icon: birdIcon}).addTo(map).bindPopup("On August 18th, 1961 in Capitola and Pleasure Point, California, hundreds of birds started raining down from the sky, crashing into homes and cars in the area. <br> No one knows why.");
   // Florida
   L.marker([27.994402, -81.760254], {icon: birdIcon}).addTo(map);
-  L.marker([27.994402, -81.760254], {icon: birdIcon}).addTo(map).bindPopup("In Florida, there has been 18816 birdstrike incidents since 1990. ");
+  L.marker([27.994402, -81.760254], {icon: birdIcon}).addTo(map).bindPopup("On Friday the 12th of April, 2019, in Alachua, Florida, a local man was killed by the world's most dangerous bird, the cassowary.");
 
   //------- INTERACTIVITY
   function highlightFeature(e) {
@@ -144,7 +144,7 @@
   info.update = function (props) {
     this._div.innerHTML = '<h4>Birdstrike "incidents":</h4>' +  (props ?
             '<b>' + props.name + ':' + '</b><br/>' + props.incidents + ' "incidents" of birdstrikes '
-            : 'Hover over a state for info');
+            : 'Hover over a state for info, <br> or click the birds on the top-ranked <br> states for a fun fact!');
   };
 
   info.addTo(map);
