@@ -197,5 +197,10 @@ body {
     margin-right: 100px;
 }
 
+.funFacts {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+}
 
 
