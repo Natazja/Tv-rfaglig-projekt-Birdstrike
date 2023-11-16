@@ -124,7 +124,7 @@ let data = `[
         "time" : "09:28",
         "TiME_OF_DAY" : "Day",
         "location" : "DELTAVILLE, VA",
-        "species" : "Gulls",
+        "species" : "Sea gull",
         "NR_FATALITIES" : 1
     },
     {

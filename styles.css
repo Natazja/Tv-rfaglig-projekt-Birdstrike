@@ -1,14 +1,25 @@
 * {
     font-family: "Candara", serif;
+    margin: 10px;
 }
 
 h3 {
     font-size: 25px;
+    margin-left: 0;
+}
+
+#TypeOfBird {
+    margin: 10px;
 }
 
 h4 {
     font-size: 17px;
     margin-bottom: 25px;
+    margin-left: 0;
+}
+
+p {
+    margin-left: 0;
 }
 
 .nav_links {
@@ -114,7 +125,27 @@ body {
     padding: 15px; /* Adjust the value as needed */
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gallery img {
+    margin-bottom: 25px;
+    transition: transform .2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.25);
+}
+
+.desc {
+    margin-bottom: 5px;
+}
+
 .birds-striksFrom1990To2022 {
     margin-left: 50px;
     margin-right: 100px;
 }
+
