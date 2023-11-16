@@ -1,3 +1,5 @@
+/// Creation of line-chart
+// Data to line-chart
 let datatoGraf = [
     {
         "INCIDENT_YEAR" : 1990,
@@ -146,10 +148,10 @@ const chart = new Chart(ctx, {
         datasets: [{
             label: 'Incidents of bird strike from 1990 to 2022 \ud83d\udc26',
             data: incidentCounts,
-            borderColor: 'rgba(75, 192, 192, 1)',
-            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderColor: '#3399ff80',
+            backgroundColor: '#3399ff80',
             borderWidth: 2,
-            pointBackgroundColor: 'rgba(75, 192, 192, 1)',
+            pointBackgroundColor: '#3399ff',
             pointBorderColor: 'rgba(75, 192, 192, 1)',
             pointRadius: 5,
             fill: true,
@@ -160,6 +162,8 @@ const chart = new Chart(ctx, {
             x: {
                 type: 'linear',
                 position: 'bottom',
+                min: 1990,
+                max: 2022.5,
                 ticks: {
                     callback: function (value) {
                         if (Number.isInteger(value)) {
@@ -194,29 +198,31 @@ const chart = new Chart(ctx, {
 
 
 let dataNoAnimals = [
-    {
-        "Number_species" : 1222,
-        "SPECIES" : "🦌White-tailed deer"
-    },
-    {
-        "Number_species" : 800,
-        "SPECIES" : "🐺Coyote"
-    },
-    {
-        "Number_species" : 1396,
-        "SPECIES" : "🦇MicroBats"
-    },
-    {
-        "Number_species" : 29,
+    { "Number_species" : 29,
         "SPECIES" : "🐊 American alligator"
-    },
-    {
-        "Number_species" : 277,
-        "SPECIES" : "🦊Red fox"
+
     },
     {
         "Number_species" : 177,
         "SPECIES" : "🦝Raccoon"
+
+    },
+    {"Number_species" : 277,
+        "SPECIES" : "🦊Red fox"
+
+    },
+    {
+        "Number_species" : 800,
+        "SPECIES" : "🐺Coyote"
+
+    },
+    { "Number_species" : 1222,
+        "SPECIES" : "🦌White-tailed deer"
+
+    },
+    {
+        "Number_species" : 1396,
+        "SPECIES" : "🦇MicroBats"
     }
 ]
 
@@ -225,6 +231,8 @@ const species = dataNoAnimals.map(entry=> entry.SPECIES)
 
 const ctx1 = document.querySelector('.No-birds').getContext('2d');
 
+
+
 const BarChart = new Chart(ctx1, {
     type: 'bar',
     data: {
@@ -232,19 +240,26 @@ const BarChart = new Chart(ctx1, {
         datasets: [{
             label: 'Number of Incidents Involving Wildlife Strikes (1990-2022)',
             data: amountOfNoBirds,
-            backgroundColor: 'rgba(75, 192, 192, 0.2)',
-            borderColor: 'rgba(75, 192, 192, 1)',
+            backgroundColor: '#3399ff80',
+            borderColor: '#3399ff',
             borderWidth: 1
         }]
     },
     options: {
         scales: {
             y: {
-                beginAtZero: true
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'Total amount of incidents of wildlife',
             }
         }
     }
+}
 });
+
+
+
 
 
 
