@@ -1,11 +1,25 @@
 * {
-    font-family: "Candara", serif;
-    margin: 10px;
+    font-family: Tahoma, serif;
+}
+
+main {
+    margin: 15px;
+}
+
+h1 {
+    font-size: 55px;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 48px;
+    margin-bottom: 15px;
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 27px;
     margin-left: 0;
+    margin-bottom: 15px;
 }
 
 #TypeOfBird {
@@ -13,9 +27,25 @@ h3 {
 }
 
 h4 {
-    font-size: 17px;
+    font-size: 20px;
     margin-bottom: 25px;
-    margin-left: 0;
+}
+
+h5 {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+h7 {
+    font-size: 10px;
+    display: flex;
+    justify-content: flex-end;
+    opacity: 0.5;
 }
 
 p {
@@ -43,6 +73,12 @@ header ul {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.welcomePage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .logo {
@@ -81,6 +117,13 @@ header ul {
     border-radius: 5px;
 }
 
+.border3 {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 0;
+    margin-top: 35px;
+}
+
 body {
     height: 100%;
     margin: 5px;
@@ -104,15 +147,18 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
+
 .info h4 {
     margin: 0 0 5px;
     color: #777;
 }
+
 .legend {
     text-align: left;
     line-height: 18px;
     color: #555;
 }
+
 .legend i {
     width: 18px;
     height: 18px;
@@ -122,13 +168,15 @@ body {
 }
 
 #incidentTable td {
-    padding: 15px; /* Adjust the value as needed */
+    padding: 20px;
+    padding-right: 57px;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 15px;
 }
 
 .gallery img {
@@ -148,4 +196,11 @@ body {
     margin-left: 50px;
     margin-right: 100px;
 }
+
+.funFacts {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+}
+
 
