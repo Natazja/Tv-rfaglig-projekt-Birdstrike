@@ -194,11 +194,21 @@ body {
     border-color: #3399ff;
 }
 
+.textBetweenGraphs {
+    display: flex;
+    justify-content: center;
+}
+
 /* --------------- FUN FACTS --------------- */
 .funFacts {
     display: flex;
     flex-direction: row;
-    margin-left: 25px;
+    margin-left: 40px;
+}
+
+.fact {
+    margin-left: 15px;
+    margin-top: 50px;
 }
 
 

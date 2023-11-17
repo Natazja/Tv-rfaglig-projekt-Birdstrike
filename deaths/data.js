@@ -43,7 +43,7 @@ let data = `[
         "INCIDENT_YEAR" : 2009,
         "time" : "14:09",
         "TiME_OF_DAY" : "Day",
-        "location" : "NEAR MORGAN CITY LA",
+        "location" : "MORGAN CITY LA",
         "species" : "Red-tailed hawk",
         "NR_FATALITIES" : 8
     },
@@ -51,7 +51,7 @@ let data = `[
         "INCIDENT_YEAR" : 2017,
         "time" : "18:55",
         "TiME_OF_DAY" : "Night",
-        "location" : "Stuttgart, AR",
+        "location" : "STUTTGART, AR",
         "species" : "Snow goose",
         "NR_FATALITIES" : 3
     },
@@ -59,7 +59,7 @@ let data = `[
         "INCIDENT_YEAR" : 2017,
         "time" : "08:50",
         "TiME_OF_DAY" : null,
-        "location" : "Arlington, AZ",
+        "location" : "ARLINGTON, AZ",
         "species" : "Rock pigeon",
         "NR_FATALITIES" : 2
     },
@@ -99,7 +99,7 @@ let data = `[
         "INCIDENT_YEAR" : 2021,
         "time" : "12:24",
         "TiME_OF_DAY" : "Day",
-        "location" : "Auburndale, FL. over Lake Arietta",
+        "location" : "AUBURNDALE, FL. OVER LAKE ARIETTA",
         "species" : "Turkey vulture",
         "NR_FATALITIES" : 2
     },
@@ -131,7 +131,7 @@ let data = `[
         "INCIDENT_YEAR" : 2016,
         "time" : "09:00",
         "TiME_OF_DAY" : "Day",
-        "location" : "SW Birchwood Airport, Chugiak, AK",
+        "location" : "SW BIRCHWOOD AIRPORT, CHUGIAK, AK",
         "species" : "Bald eagle",
         "NR_FATALITIES" : 4
     },
