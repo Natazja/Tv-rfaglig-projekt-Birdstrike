@@ -6,24 +6,28 @@ main {
     margin: 15px;
 }
 
+.welcomePage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 h1 {
-    font-size: 55px;
+    font-size: 62px;
     margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 h2 {
-    font-size: 48px;
+    font-size: 52px;
     margin-bottom: 15px;
+    margin-top: 25px;
 }
 
 h3 {
-    font-size: 27px;
+    font-size: 25px;
     margin-left: 0;
     margin-bottom: 15px;
-}
-
-#TypeOfBird {
-    margin: 10px;
 }
 
 h4 {
@@ -38,11 +42,11 @@ h5 {
 }
 
 h6 {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 h7 {
-    font-size: 10px;
+    font-size: 13px;
     display: flex;
     justify-content: flex-end;
     opacity: 0.5;
@@ -75,11 +79,7 @@ header ul {
     align-items: center;
 }
 
-.welcomePage {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+
 
 .logo {
     cursor: pointer;
@@ -163,6 +163,12 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 15px;
+}
+
+#TypeOfBird {
+    margin: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 .gallery img {
